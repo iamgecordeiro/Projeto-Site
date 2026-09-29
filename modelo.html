@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Rota Livre — Viagens em Portugal</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./App.css" />
+  </head>
+  <body>
+    <div class="pagina" id="inicio">
+      <header class="cabecalho">
+        <a class="marca" href="#inicio">Rota Livre<span>.</span></a>
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#destinos">Destinos</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+        <a class="ligacao-cabecalho" href="#destinos">Explorar viagens</a>
+      </header>
+
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="hero-conteudo">
+          <p class="sobre-titulo">VIAGENS EM PORTUGAL</p>
+          <h1 id="titulo-principal">O próximo lugar fica mais perto do que pensas.</h1>
+          <p class="hero-descricao">Três formas de sair da rotina. Encontra a viagem certa para ti.</p>
+          <a class="botao-destaque" href="#destinos">Ver destinos <span aria-hidden="true">↗</span></a>
+        </div>
+        <img class="hero-imagem" src="./imagens/costa-vicentina.jpg" alt="Costa atlântica portuguesa ao pôr do sol" />
+      </section>
+
+      <main>
+        <section class="catalogo" id="destinos" aria-labelledby="titulo-destinos">
+          <div class="topo-secao">
+            <div>
+              <p class="sobre-titulo">ESCOLHE O TEU RITMO</p>
+              <h2 id="titulo-destinos">Destinos para descobrir</h2>
+            </div>
+            <p class="contagem">3 viagens</p>
+          </div>
+
+          <div class="barra-filtros" role="group" aria-label="Filtrar viagens por tipo">
+            <button class="filtro filtro--ativo" type="button" aria-pressed="true">Todas</button>
+            <button class="filtro" type="button" aria-pressed="false">Cidade</button>
+            <button class="filtro" type="button" aria-pressed="false">Natureza</button>
+            <button class="filtro" type="button" aria-pressed="false">Praia</button>
+          </div>
+
+          <div class="grelha">
+            <article class="cartao">
+              <img class="imagem-viagem" src="./imagens/porto-douro.jpg" alt="Vista do Porto e do Douro" />
+              <div class="corpo-cartao">
+                <span class="etiqueta">Cidade</span>
+                <h3>Porto e Douro</h3>
+                <p class="meta">2 dias <span aria-hidden="true">·</span> Desde 120 €</p>
+              </div>
+            </article>
+            <article class="cartao">
+              <img class="imagem-viagem" src="./imagens/serra-estrela.jpg" alt="Vista da Serra da Estrela" />
+              <div class="corpo-cartao">
+                <span class="etiqueta">Natureza</span>
+                <h3>Serra da Estrela</h3>
+                <p class="meta">3 dias <span aria-hidden="true">·</span> Desde 180 €</p>
+              </div>
+            </article>
+            <article class="cartao">
+              <img class="imagem-viagem" src="./imagens/costa-vicentina.jpg" alt="Vista da Costa Vicentina" />
+              <div class="corpo-cartao">
+                <span class="etiqueta">Praia</span>
+                <h3>Costa Vicentina</h3>
+                <p class="meta">4 dias <span aria-hidden="true">·</span> Desde 240 €</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape" id="sobre">
+        <p class="marca marca--rodape">Rota Livre<span>.</span></p>
+        <p>Pequenas viagens, grandes histórias.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>
